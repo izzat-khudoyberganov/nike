@@ -243,3 +243,61 @@
 }
 
 /****************************************footer section finished  *************************************/
+
+
+/* Media Query */
+
+@media(max-width: 820px) {
+
+    .header__logo {
+        position: relative;
+        z-index: 10;
+    }
+
+
+    .header__nav {
+        position: absolute;
+        height: 100vh;
+        background-color: var(--dark);
+        width: 45%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        border-left: 1px solid var(--violet);
+        transition: 0.4s;
+        padding-left: 30px;
+    }
+
+    .header__nav.active {
+        transform: translateX(0);
+
+    }
+
+    .nav__link {
+        padding-inline: 0px;
+    }
+
+    .burger__menu {
+        width: 30px;
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burger__menu>span {
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+}
+
+@media(max-width: 425px) {
+    .header__nav {
+        width: 75%;
+    }
+}
