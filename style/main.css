@@ -296,6 +296,22 @@
     }
 }
 
+@media(max-width: 500px) {
+    .banner {
+        height:  400px;
+        gap: 10px;
+    }
+
+    .banner__title{
+        font-size: 40px;
+        line-height: 100%;
+    }
+
+    .banner__text{
+        font-size: 16px;
+    }
+}
+
 @media(max-width: 425px) {
     .header__nav {
         width: 75%;
